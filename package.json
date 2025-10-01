@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "fast-csv": "^5.0.5",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.3",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.6.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
+  "name": "mw_inventory_mngmnt_sys",
+  "version": "1.0.0",
+  "description": "Requirements:  customer can login, upload inventory in a CSV format or using APIs or using UI, manage the inventory either for single media owner or aggregators and then, allow inventory to be accessed by our other products like LMX and MAX seamlessly using APIs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavansoneji/mw_inventory_mngmnt_sys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavansoneji/mw_inventory_mngmnt_sys/issues"
+  },
+  "homepage": "https://github.com/pavansoneji/mw_inventory_mngmnt_sys#readme"
+}

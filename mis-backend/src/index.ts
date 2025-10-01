@@ -5,7 +5,10 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 
-// Load environment variables
+// Import routes
+import authRoutes from './routes/auth';
+import inventoryRoutes from './routes/inventory';
+
 dotenv.config();
 
 const app: Application = express();
@@ -23,7 +26,11 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
-// Routes placeholder
+// Mount routes
+app.use('/api/auth', authRoutes);
+app.use('/api/inventory', inventoryRoutes);
+
+// Test root
 app.get('/', (req, res) => {
   res.json({ message: 'Inventory Management System API is running' });
 });
